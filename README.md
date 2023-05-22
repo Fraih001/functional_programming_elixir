@@ -1,1 +1,3 @@
 # functional_programming_elixir
+
+Notes for functional_programming_elixir
