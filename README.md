@@ -38,4 +38,9 @@ Use String.reverse() if need be
 ++ Keyword lists - keys can be the same - useful for function options (function has same name, but different arity) - another way to think about them is that they are groups of tuples  
 ++ Structs have same set of keys throughout application, cannot add new key to Data struct for example  
 ++ Defp defines private functions for your module  
-++ Add \\ to create default argument
+++ Add \\ to create default argument  
+Creates two different functions (ex: function/1 and function/2 - first example uses default) - this is due to Elixir having fixed arity.  
+++ Macros are lexically scoped (ex: require Integer)  
+++ Defgaurd allows for unique, re-usable guard clauses  
+++ case is useful when we want to check an expression with multiple pattern-matching clauses  
+++ cond control flow is useful when you want to check different variables and values in logical expressions
