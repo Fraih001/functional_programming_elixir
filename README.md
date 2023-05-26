@@ -51,4 +51,7 @@ Chapter 4
 
 ++ A bounded recursion is a type of recursive function in which the successive calls to itself have an end  
 ++ In a list, the last element of the list is and an empty [], which is often the base case for recursive calls  
-++ We can use recursive functions to navigate through any data structure. We only need to know how to reduce the data for the next iterations and identify when the data reaches the stop condition
+++ We can use recursive functions to navigate through any data structure. We only need to know how to reduce the data for the next iterations and identify when the data reaches the stop condition  
+++ Decrease and conquer is a technique for reducing a problem to its simplest form and starting to solve it incrementally.  
+++ Tail Recursive Function is a function that has a recursive call in the last expression. Ex: n * of(n-1) vs of(n-1, n*acc)  
+++ In general, if you’re expecting millions of iterations or the tail-recursive function isn’t hard to read and maintain, go with tail-recursive. If the number of iterations is small and the tail-recursive function is hard to understand and maintain, go with body-recursive
