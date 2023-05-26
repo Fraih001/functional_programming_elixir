@@ -44,3 +44,9 @@ Creates two different functions (ex: function/1 and function/2 - first example u
 ++ Defgaurd allows for unique, re-usable guard clauses  
 ++ case is useful when we want to check an expression with multiple pattern-matching clauses  
 ++ cond control flow is useful when you want to check different variables and values in logical expressions
+
+Chapter 4
+
+++ A bounded recursion is a type of recursive function in which the successive calls to itself have an end  
+++ In a list, the last element of the list is and an empty [], which is often the base case for recursive calls  
+++ We can use recursive functions to navigate through any data structure. We only need to know how to reduce the data for the next iterations and identify when the data reaches the stop condition
