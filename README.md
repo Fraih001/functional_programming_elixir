@@ -2,11 +2,13 @@
 
 Notes for functional_programming_elixir
 
-Chapter 1  
+Chapter 1
+
 ++ the functional programming paradigm, functions are the basic building blocks, all values are immutable, and the code is declarative  
 ++ Declarative programming focuses on what is necessary to solve a problem, describing the data flow.
 
-Chapter 2  
+Chapter 2
+
 ++ Left side of operations and, or, not must be boolean  
 ++ && returns the second expression’s value when the first is truthy  
 ++ || returns the first truthy expression; otherwise, it returns the value of the last expression.  
