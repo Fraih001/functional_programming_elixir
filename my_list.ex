@@ -19,4 +19,10 @@ defmodule MyList do
       min([second | rest])
     end
   end
+
+    def each([], _function), do: nil
+    def each([head | tail], function) do
+      function.(head)
+      each(tail, function)
+    end
 end
