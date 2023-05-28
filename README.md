@@ -55,3 +55,11 @@ Chapter 4
 ++ Decrease and conquer is a technique for reducing a problem to its simplest form and starting to solve it incrementally.  
 ++ Tail Recursive Function is a function that has a recursive call in the last expression. Ex: n * of(n-1) vs of(n-1, n*acc)  
 ++ In general, if you’re expecting millions of iterations or the tail-recursive function isn’t hard to read and maintain, go with tail-recursive. If the number of iterations is small and the tail-recursive function is hard to understand and maintain, go with body-recursive
+
+Chapter 5
+
+++ You can add filter expressions after the parameter in comprehensions  
+++ Lazy evaluation is when we write a series of instructions that won’t be executed right now.  
+Currying is a feature that delays a function’s evaluation when you pass fewer arguments than the function requires  
+++ Elixir has partial application, a feature you can use to postpone a function’s execution by wrapping it in a new function and fixing a value to any of the function’s arguments.  
+++ The streams type represents a flow of data that may not have an end. Together with this data type, we have the Stream module that contains many higher-order functions to operate and create our streams.
