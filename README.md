@@ -63,3 +63,11 @@ Chapter 5
 Currying is a feature that delays a function’s evaluation when you pass fewer arguments than the function requires  
 ++ Elixir has partial application, a feature you can use to postpone a function’s execution by wrapping it in a new function and fixing a value to any of the function’s arguments.  
 ++ The streams type represents a flow of data that may not have an end. Together with this data type, we have the Stream module that contains many higher-order functions to operate and create our streams.
+
+Chapter 6
+
+++ use permits another module to take actions and inject code on the calling module  
+++ Elixir’s protocol is a feature that lets you create a single interface that various data types can implement. Using that, you can have polymorphism: a single interface that works with different data types.  
+++ In Elixir we can create polymorphic functions using protocols.  
+We use the defprotocol directive, and then we create a function with def but without defining its body.  
+We implemented the protocol with the directive defimpl. We used the for option to specify the data type. Then, inside the directive body, we implemented the info/1 function.
