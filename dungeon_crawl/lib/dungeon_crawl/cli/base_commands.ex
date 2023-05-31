@@ -29,24 +29,30 @@ defmodule DungeonCrawl.CLI.BaseCommands do
     end
 
     def ask_for_option(options) do
-      try do
-        options
-          |> display_options
-          |> generate_question
-          |> Shell.prompt
-          |> parse_answer!
-          |> find_option_by_index!(options)
-      rescue
-        e in DungeonCrawl.CLI.InvalidOptionError ->
-        display_error(e)
-        ask_for_option(options)
-        end
-      end
+      answer =
+      options
+      |> display_options
+      |> generate_question
+      |> Shell.prompt
 
-      def display_error(e) do
-        Shell.cmd("clear")
-        Shell.error(e.message)
-        Shell.prompt("Press Enter to continue.")
-        Shell.cmd("clear")
-      end
+    with {option, _} <- Integer.parse(answer),
+        chosen when chosen != nil <- Enum.at(options, option - 1) do
+      chosen
+    else
+      :error -> retry(options)
+      nil -> retry(options)
+    end
+  end
+
+  def retry(options) do
+    display_error("Invalid option")
+    ask_for_option(options)
+  end
+
+  def display_error(message) do
+    Shell.cmd("clear")
+    Shell.error(message)
+    Shell.prompt("Press Enter to continue.")
+    Shell.cmd("clear")
+  end
 end
