@@ -78,4 +78,7 @@ Chapter 7
 ++ Different ways to handle impure functions  
 Monads  
 Try, Throw, Catch  
-Try, Raise, Rescue
+Try, Raise, Rescue  
+++ Elixir’s special form with permits you to combine multiple matching clauses. If all clauses match, the code executes and returns the do block result. If one clause doesn’t match, the code stops and returns the value of the non-matching clause.
+
+END
