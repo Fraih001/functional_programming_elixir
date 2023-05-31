@@ -71,3 +71,11 @@ Chapter 6
 ++ In Elixir we can create polymorphic functions using protocols.  
 We use the defprotocol directive, and then we create a function with def but without defining its body.  
 We implemented the protocol with the directive defimpl. We used the for option to specify the data type. Then, inside the directive body, we implemented the info/1 function.
+
+Chapter 7
+
+++ When we can’t predict the results of a function, the function is impure.  
+++ Different ways to handle impure functions  
+Monads  
+Try, Throw, Catch  
+Try, Raise, Rescue
